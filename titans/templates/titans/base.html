@@ -8,27 +8,79 @@
     <title>TitanFan 2</title>
 </head>
 <body>
-<div class="main-box">
-  <div>Список товаров</div>
-      <div class="empty-square">
-        <div>
-            <img class="photo-slot" src="{% static 'titanfall-2-poster-promo-materials-titanfall-characters-popular-games.jpg' %}"
-            alt="Aboba" width="149" height="138">
-        </div>
-        <div>
-          <button class="buy-button">Купить</button>
-        </div>
-      </div>
-      <div class="empty-square">
-        <div>
-            <img class="photo-slot" src="{% static 'ronin_titan.jpg' %}"
-            alt="Aboba" width="149" height="138">
-        </div>
-        <div>
-          <button class="buy-button">Купить</button>
-        </div>
-      </div>
-
+<header class="header-container">
+    <div class="start">
+        REV-1b
     </div>
+    <nav class="end">
+        <a href="#">Works</a>
+        <a href="#">About me</a>
+        <a href="#">Profile</a>
+    </nav>
+</header>
+<section class="main-section">
+    <div class="info">
+        <div>
+            <h1>Я - Бэкендер!!!111</h1>
+        </div>
+        <p>
+            Я - представитель сообщества сверхлюдей, повелителей асинхронности и SQL!
+        </p>
+        <button class="first-button">Прикоснуться к моей мудрости</button>
+    </div>
+    <div>
+        <img class="my-face" src="{% static 'sticker.webp' %}" alt="My pretty face">
+    </div>
+</section>
+<section class="skills">
+    <h2 style="text-align: center">Могу пояснить за:</h2>
+    <div class="skills-dir">
+        <div class="skill back-1">
+            Python
+        </div>
+        <div class="skill back-2">
+            PostgreSQL
+        </div>
+        <div class="skill back-1">
+            Django
+        </div>
+    </div>
+    <div class="skills-dir">
+        <div class="skill back-2">
+            HTML
+        </div>
+        <div class="skill back-1">
+            CSS
+        </div>
+        <div class="skill back-2">
+            Здесь могла бы быть ваша реклама)
+        </div>
+    </div>
+</section>
+<section class="middle-section">
+    <h2 style="text-align: center">Мои проекты:</h2>
+    <div class="projects">
+        <img class="project-image" src="{% static 'seabattle.jpg' %}" alt="Bruh">
+        <div>Телеграмм бот, предоставляющий услуги УМНОГО(!) соперника для игры в морской бой.</div>
+    </div>
+    <div class="projects">
+        <div>Телеграмм бот, предоставляющий услуги УМНОГО(!) соперника для игры в морской бой.</div>
+        <img class="project-image" src="{% static 'seabattle.jpg' %}" alt="Bruh">
+    </div>
+    <div class="projects">
+        <img class="project-image" src="{% static 'seabattle.jpg' %}" alt="Bruh">
+        <div>Телеграмм бот, предоставляющий услуги УМНОГО! соперника для игры в морской бой.</div>
+    </div>
+</section>
+<footer class="header-container">
+    <div class="start">
+        REV-1b
+    </div>
+    <nav class="end">
+        <a href="#">Works</a>
+        <a href="#">About me</a>
+        <a href="#">Profile</a>
+    </nav>
+</footer>
 </body>
 </html>
