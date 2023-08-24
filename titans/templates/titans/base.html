@@ -1,10 +1,34 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
     <title>TitanFan 2</title>
 </head>
 <body>
-    <h1>HELL Titan!!!</h1>
+<div class="main-box">
+  <div>Список товаров</div>
+      <div class="empty-square">
+        <div>
+            <img class="photo-slot" src="{% static 'titanfall-2-poster-promo-materials-titanfall-characters-popular-games.jpg' %}"
+            alt="Aboba" width="149" height="138">
+        </div>
+        <div>
+          <button class="buy-button">Купить</button>
+        </div>
+      </div>
+      <div class="empty-square">
+        <div>
+            <img class="photo-slot" src="{% static 'ronin_titan.jpg' %}"
+            alt="Aboba" width="149" height="138">
+        </div>
+        <div>
+          <button class="buy-button">Купить</button>
+        </div>
+      </div>
+
+    </div>
 </body>
 </html>
