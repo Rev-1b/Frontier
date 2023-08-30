@@ -1,86 +1,73 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
-    <title>TitanFan 2</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/img/Titanfan2-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/fontello.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <title>Titan Fan 2</title>
 </head>
-<body>
-<header class="header-container">
-    <div class="start">
-        REV-1b
-    </div>
-    <nav class="end">
-        <a href="#">Works</a>
-        <a href="#">About me</a>
-        <a href="#">Profile</a>
+
+<body style="background-color: rgb(50, 50, 50);">
+    <nav class="navbar fixed-top navbar-expand-sm bg-body-tertiary nav-border" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="base.html">
+                <img src="/static/img/Titanfan2-logo.png" alt="Logo" width="30" height="26"
+                    class="d-inline-block align-text-top">
+                <span class="ps-1">Titan Fan 2</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="titans.html">Titans</a>
+                    <a class="nav-link" href="#">Pilots</a>
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
-</header>
-<section class="main-section">
-    <div class="info">
-        <div>
-            <h1>Я - Бэкендер!!!111</h1>
-        </div>
-        <p>
-            Я - представитель сообщества сверхлюдей, повелителей асинхронности и SQL!
-        </p>
-        <button class="first-button">Прикоснуться к моей мудрости</button>
-    </div>
-    <div>
-        <img class="my-face" src="{% static 'sticker.webp' %}" alt="My pretty face">
-    </div>
-</section>
-<section class="skills">
-    <h2 style="text-align: center">Могу пояснить за:</h2>
-    <div class="skills-dir">
-        <div class="skill back-1">
-            Python
-        </div>
-        <div class="skill back-2">
-            PostgreSQL
-        </div>
-        <div class="skill back-1">
-            Django
+
+    <div class="container-fluid text-center">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-sm-9 align-self-start intro">
+                <h1>Titan Fan 2</h1>
+                <p>
+                    Titan Fan 2 - Это фанатский сайт, созданный по игре Titalfall 2. Здесь есть каталог Титанов и
+                    Пилотов, с их оружием и характеристиками.
+                </p>
+                <a href="titans.html" class="button">
+                    <span class="button-line button-line-top"></span>
+                    <span class="button-line button-line-right"></span>
+                    <span class="button-line button-line-bottom"></span>
+                    <span class="button-line button-line-left"></span>
+                    Перейти к титанам
+                </a>
+            </div>
         </div>
     </div>
-    <div class="skills-dir">
-        <div class="skill back-2">
-            HTML
-        </div>
-        <div class="skill back-1">
-            CSS
-        </div>
-        <div class="skill back-2">
-            Здесь могла бы быть ваша реклама)
-        </div>
-    </div>
-</section>
-<section class="middle-section">
-    <h2 style="text-align: center">Мои проекты:</h2>
-    <div class="projects">
-        <img class="project-image" src="{% static 'seabattle.jpg' %}" alt="Bruh">
-        <div>Телеграмм бот, предоставляющий услуги УМНОГО(!) соперника для игры в морской бой.</div>
-    </div>
-    <div class="projects">
-        <div>Телеграмм бот, предоставляющий услуги УМНОГО(!) соперника для игры в морской бой.</div>
-        <img class="project-image" src="{% static 'seabattle.jpg' %}" alt="Bruh">
-    </div>
-    <div class="projects">
-        <img class="project-image" src="{% static 'seabattle.jpg' %}" alt="Bruh">
-        <div>Телеграмм бот, предоставляющий услуги УМНОГО! соперника для игры в морской бой.</div>
-    </div>
-</section>
-<footer class="header-container">
-    <div class="start">
-        REV-1b
-    </div>
-    <nav class="end">
-        <a href="#">Works</a>
-        <a href="#">About me</a>
-        <a href="#">Profile</a>
-    </nav>
-</footer>
+
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
