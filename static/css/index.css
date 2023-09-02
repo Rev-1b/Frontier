@@ -1,3 +1,14 @@
+html{
+    transition: 0.5s;
+}
+
+.transparent-nav {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00ffffff', GradientType=0);
+}
+
 .color-overlay{
     position: absolute;
     height: 100%;
@@ -5,14 +16,9 @@
     padding-left: 10%;
 }
 
-.nav-border{
-    border: 2px solid rgb(26, 26, 26);
-}
-
 .container-fluid{
     width: 99vw;
     height: 120vh;
-    margin-top: 3%;
     background-image: url('../img/Epic-prewiew.jpg');
     background-size: cover;
     color: white;
