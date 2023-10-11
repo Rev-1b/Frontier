@@ -1,60 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/static/css/bootstrap.css" rel="stylesheet">
-    <link rel="shortcut icon" href="/static/img/Titanfan2-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/static/css/fontello.css">
-    <link rel="stylesheet" href="/static/css/titans.css">
-    <title>Titan Fun 2</title>
-</head>
-
-<body style="background-color: rgb(201, 200, 200);">
-<header>
-
-    <!-- Navigation bar -->
-
-    <nav class="navbar fixed-top navbar-expand-sm navbar-dark p-md-3 text-shadow">
-        <div class="container">
-            <a class="navbar-brand" href="base.html">
-                <img src="/static/img/Titanfan2-logo.png" alt="Logo" width="30" height="26"
-                     class="d-inline-block align-text-top">
-                <span class="ps-1">Titan Fun 2</span>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="titans.html">Titans</a>
-                    <a class="nav-link active" href="#">Pilots</a>
-
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Menu
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
-
-
-<section>
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/titans.css' %}">
+{% endblock %}
+{% block content %}
+	<section>
 
     <!-- Offcanvas (side navigation) -->
 
@@ -86,7 +37,6 @@
                     <a class="nav-link obs-link ms-3 my-1" href="#northstar">Нордстар</a>
                     <a class="nav-link obs-link" href="#unusial">Особая категория:</a>
                     <a class="nav-link obs-link ms-3 my-1" href="#monarch">Монарх</a>
-                    <a class="nav-link obs-link ms-3 my-1" href="#destroyer">Разрушитель</a>
                 </nav>
             </nav>
         </div>
@@ -152,7 +102,7 @@
                 <div class="col-lg-6 col-sm-12">
                     <iframe width="auto" height="auto"
                             src="https://www.youtube.com/embed/Sn50EDiLVAk?si=_Ph-bVTpKGB8Y_Bb"
-                            title="YouTube video player" frameborder="0"
+                            title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen style="box-shadow: 0 0 10px aliceblue, 0 0 40px aliceblue;">
                     </iframe>
@@ -173,7 +123,7 @@
                 <div class="col-lg-6 col-sm-12">
                     <iframe width="auto" height="auto"
                             src="https://www.youtube.com/embed/KDDdLxTT8aI?si=UlC9JgugvvyzjDnU"
-                            title="YouTube video player" frameborder="0"
+                            title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen style="box-shadow: 0 0 10px aliceblue, 0 0 40px aliceblue;">
                     </iframe>
@@ -426,8 +376,7 @@
         </div>
     </div>
 </section>
-
-<footer>
+    <footer>
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-6">
@@ -438,11 +387,10 @@
         </div>
     </div>
 </footer>
+{% endblock %}
 
-
-<script src="/static/js/bootstrap.bundle.min.js"></script>
-
-<script>
+{% block additional_scripts %}
+	<script>
     var nav = document.querySelector('nav');
     window.addEventListener('scroll', function () {
         if (window.pageYOffset > 100) {
@@ -452,7 +400,4 @@
         }
     });
 </script>
-
-</body>
-
-</html>
+{% endblock %}
